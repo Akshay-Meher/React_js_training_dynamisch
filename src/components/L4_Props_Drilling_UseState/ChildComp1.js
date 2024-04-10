@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ChildComp2 from './ChildComp2'
 
 function ChildComp1({ changeMsg }) {
+    const [msgChild1, setMsgChild1] = useState('');
     return (
         <div style={{
             padding: "10px 10px",
@@ -12,7 +13,8 @@ function ChildComp1({ changeMsg }) {
             width: "40vw"
         }}>
             <h2>ChildComp1</h2>
-            <ChildComp2 changeMsg={changeMsg} />
+            <h3>Msg:{msgChild1}</h3>
+            <ChildComp2 changeMsg={changeMsg} setMsgChild1={setMsgChild1} />
         </div>
     )
 }

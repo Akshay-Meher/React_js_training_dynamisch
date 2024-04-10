@@ -18,6 +18,7 @@ const style = {
     }
 }
 
+// let count = 0;
 function ParentComp() {
     const [msg, setMsg] = useState("Change Me...");
 

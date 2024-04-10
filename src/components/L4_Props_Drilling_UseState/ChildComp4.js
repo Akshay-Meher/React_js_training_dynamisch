@@ -1,26 +1,51 @@
 import React, { useState } from 'react'
 
 
-function ChildComp4({ changeMsg }) {
+function ChildComp4({ changeMsg, setMsgChild1, setMsgChild2, setMsgChild3 }) {
     const [newMsg, setNewMsg] = useState('');
-    const [selectComp, setSelectComp] = useState('');
+    const [selectComp, setSelectComp] = useState('ParentComp');
+    const [msgChild4, setMsgChild4] = useState('');
 
     function handleClick() {
-        changeMsg(newMsg);
+
+        switch (selectComp) {
+            case 'ParentComp':
+                changeMsg(newMsg);
+                break;
+            case 'ChildComp1':
+                setMsgChild1(newMsg);
+                break;
+            case 'ChildComp2':
+                setMsgChild2(newMsg);
+                break;
+            case 'ChildComp3':
+                setMsgChild3(newMsg);
+                break;
+            case 'ChildComp4':
+                setMsgChild4(newMsg);
+                break;
+            default:
+                return;
+        }
         setNewMsg('');
     }
     return (
         <div style={style.childCard}>
             <h5>ChildComp4</h5>
+            <span>msg:{msgChild4}</span>
             <div style={style.innerDiv}>
 
                 {/* <label for="comp">Choose a Componant:</label> */}
-                <select name="comp" id="comp">
-
+                <select
+                    name="comp"
+                    id="comp"
+                    value={selectComp}
+                    onChange={(e) => setSelectComp(e.target.value)}
+                >
                     <option value="ParentComp">ParentComp</option>
-                    <option value="ChildComp1">ChildComp1</option>
-                    <option value="ChildComp2">ChildComp2</option>
-                    <option value="ChildComp3">ChildComp3</option>
+                    <option value='ChildComp1'>ChildComp1</option>
+                    <option value='ChildComp2'>ChildComp2</option>
+                    <option value='ChildComp3'>ChildComp3</option>
                     <option value="ChildComp4">ChildComp4</option>
                 </select>
 

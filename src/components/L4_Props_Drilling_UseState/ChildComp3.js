@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ChildComp4 from './ChildComp4'
 
-function ChildComp3({ changeMsg }) {
+function ChildComp3({ changeMsg, setMsgChild1, setMsgChild2 }) {
+
+    const [msgChild3, setMsgChild3] = useState('');
+
     return (
         <div style={{
             padding: "10px 10px",
@@ -13,7 +16,12 @@ function ChildComp3({ changeMsg }) {
 
         }}>
             <h4>ChildComp3</h4>
-            <ChildComp4 changeMsg={changeMsg} />
+            <h4>msg: {msgChild3}</h4>
+            <ChildComp4 changeMsg={changeMsg}
+                setMsgChild1={setMsgChild1}
+                setMsgChild2={setMsgChild2}
+                setMsgChild3={setMsgChild3}
+            />
         </div>
 
     )

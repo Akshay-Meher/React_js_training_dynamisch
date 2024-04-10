@@ -11,12 +11,12 @@ function Arrays() {
     const [input2, setInput2] = useState('');
 
     function addArr1() {
-        setArr1((prev) => [...prev, input1])
+        setArr1((prev) => [input1, ...prev])
         setInput1("");
     }
 
     function addArr2() {
-        setArr2((prev) => [...prev, input2])
+        setArr2((prev) => [input2, ...prev])
         setInput2("");
     }
     function addResult() {
