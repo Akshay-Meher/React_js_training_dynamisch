@@ -3,6 +3,7 @@ import "./App.css"
 // import Counter from "../src/components/L1_LifeCycle_Class_Comp/Ass1/Counter"
 import Session4 from './components/L4_Props_Drilling_UseState/Session4';
 import Session5 from './components/L5_useEffect_state_vs_props/Session5';
+import Session6 from './components/L6_useEffect_task_revise/Session6';
 // import ParentCard from './components/L3_children_callBack/Child_to_parent/ParentCard';
 // import LearnUseState from './components/L3_children_callBack/useState/LearnUseState';
 // import Test from './components/1_LifeCycle/Test';
@@ -39,7 +40,7 @@ function App() {
           Ass-D4.6: Manupulate Arrays (add, update, delete)  
       */}
 
-      <Session4 />
+      {/* <Session4 /> */}
 
 
       {/* 
@@ -47,6 +48,16 @@ function App() {
       */}
 
       {/* <Session5 /> */}
+
+      {/* 
+        Ass-D6.1: fetch Api using useEffect 
+        Ass-D6.2:  settimeout, setInterval using useEffect 
+        Ass-D6.3:  cookies using useEffect 
+        Ass-D6.4:  localstorage Todo using useEffect
+      */}
+
+      <Session6 />
+
     </div>
   )
 }
