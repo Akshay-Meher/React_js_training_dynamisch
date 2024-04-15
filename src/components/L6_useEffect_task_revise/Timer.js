@@ -6,6 +6,7 @@ function Timer() {
     useEffect(() => {
         handleTime();
         return () => {
+            console.log("Cleared Interval")
             clearInterval(id.current);
         }
     }, [])
@@ -15,7 +16,7 @@ function Timer() {
     function handleTime() {
         id.current = setInterval(() => {
             setTime(prev => prev + 1);
-            console.log(time);
+            // console.log(time);
         }, 1000)
     }
 

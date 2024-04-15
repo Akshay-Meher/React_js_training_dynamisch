@@ -4,6 +4,7 @@ import "./App.css"
 import Session4 from './components/L4_Props_Drilling_UseState/Session4';
 import Session5 from './components/L5_useEffect_state_vs_props/Session5';
 import Session6 from './components/L6_useEffect_task_revise/Session6';
+import Events from './components/L7_Events/Events';
 // import ParentCard from './components/L3_children_callBack/Child_to_parent/ParentCard';
 // import LearnUseState from './components/L3_children_callBack/useState/LearnUseState';
 // import Test from './components/1_LifeCycle/Test';
@@ -56,7 +57,11 @@ function App() {
         Ass-D6.4:  localstorage Todo using useEffect
       */}
 
-      <Session6 />
+      {/* <Session6 /> */}
+
+      {/* Ass-D7: Learn how to handle user events in React */}
+
+      <Events />
 
     </div>
   )
