@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-const hobbies = ['swimming', 'dancing', 'trekking', 'traveling']
 function HobbySelector() {
     const [selectedHobbies, setSelectedHobbies] = useState({
         swimming: false,

@@ -14,7 +14,7 @@ function TitleChange() {
         }, 5000);
 
         return () => clearInterval(Id);
-    }, []);
+    }, [isTrue]);
 
     return (
         <h1>{JSON.stringify(isTrue)}</h1>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function TabStyleChanger({ activeTitle = "My App", inactiveTitle = "Check Out My App", }) {
     const [isActive, setIsActive] = useState('true')
@@ -7,6 +7,7 @@ function TabStyleChanger({ activeTitle = "My App", inactiveTitle = "Check Out My
             document.title = activeTitle;
             document.body.style.backgroundColor = 'red';
             console.log("onFocus");
+            console.log(a);
             // alert("ho")
             setIsActive(true);
         };
@@ -20,12 +21,13 @@ function TabStyleChanger({ activeTitle = "My App", inactiveTitle = "Check Out My
         window.addEventListener('focus', handleWindowFocus);
         window.addEventListener('blur', handleWindowBlur);
         // handleWindowFocus();
-
+        const a = isActive ? "" : ""
         return () => {
             window.removeEventListener('focus', handleWindowFocus);
             window.removeEventListener('blur', handleWindowBlur);
         };
-    }, [activeTitle, inactiveTitle]);
+    }, [activeTitle, inactiveTitle, isActive]);
+
 
     return null;
 };
