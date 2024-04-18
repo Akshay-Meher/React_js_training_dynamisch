@@ -1,6 +1,9 @@
 import React from 'react';
 import "./App.css"
+import Session10 from './components/L10_Logical_Filters_rendring/Session10';
+import Arrays from './components/L4_Props_Drilling_UseState/Arrays';
 import Session9 from './components/L9_List_&_Keys_Rendering/Session9';
+import Session11 from './components/L11_Todo_List/Session11';
 // import Counter from "../src/components/L1_LifeCycle_Class_Comp/Ass1/Counter"
 // import Session4 from './components/L4_Props_Drilling_UseState/Session4';
 // import Session5 from './components/L5_useEffect_state_vs_props/Session5';
@@ -67,8 +70,21 @@ function App() {
 
       {/* Ass-D9:  */}
 
-      <Session9 />
+      {/* <Session9 /> */}
 
+      {/* Ass- 10
+          Ass-10.1: "remove Duplicates in array"
+          Ass-10.2: "Nested Object"
+          Ass-10.3: "Multiple Filter People Data"
+      */}
+      <Session10 />
+
+
+      {/* Session 11
+          Ass-11.1: Todo List
+        
+      */}
+      <Session11 />
     </div>
   )
 }

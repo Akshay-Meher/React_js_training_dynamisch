@@ -18,7 +18,7 @@ function Session9() {
             <FibonacciSequence />
             <PalindromeChecker />
             <ForOf />
-            <Produts />
+            {/* <Produts /> */}
         </div>
     )
 }
