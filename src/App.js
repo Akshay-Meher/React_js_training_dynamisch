@@ -4,11 +4,12 @@ import Session10 from './components/L10_Logical_Filters_rendring/Session10';
 import Arrays from './components/L4_Props_Drilling_UseState/Arrays';
 import Session9 from './components/L9_List_&_Keys_Rendering/Session9';
 import Session11 from './components/L11_Todo_List/Session11';
+import Session12 from './components/L12_Form_handling/Session12';
 // import Counter from "../src/components/L1_LifeCycle_Class_Comp/Ass1/Counter"
 // import Session4 from './components/L4_Props_Drilling_UseState/Session4';
 // import Session5 from './components/L5_useEffect_state_vs_props/Session5';
 // import Session6 from './components/L6_useEffect_task_revise/Session6';
-// import Events from './components/L7_L8_Events/Events';
+import Events from './components/L7_L8_Events/Events';
 // import ParentCard from './components/L3_children_callBack/Child_to_parent/ParentCard';
 // import LearnUseState from './components/L3_children_callBack/useState/LearnUseState';
 // import Test from './components/1_LifeCycle/Test';
@@ -77,14 +78,19 @@ function App() {
           Ass-10.2: "Nested Object"
           Ass-10.3: "Multiple Filter People Data"
       */}
-      <Session10 />
+      {/* <Session10 /> */}
 
 
       {/* Session 11
           Ass-11.1: Todo List
         
       */}
-      <Session11 />
+      {/* <Session11 /> */}
+
+
+      {/* Session 12 & 13: From Handling and validation */}
+
+      <Session12 />
     </div>
   )
 }
