@@ -1,15 +1,17 @@
 import React from 'react';
 import "./App.css"
 import Session10 from './components/L10_Logical_Filters_rendring/Session10';
-import Arrays from './components/L4_Props_Drilling_UseState/Arrays';
+// import Arrays from './components/L4_Props_Drilling_UseState/Arrays';
 import Session9 from './components/L9_List_&_Keys_Rendering/Session9';
 import Session11 from './components/L11_Todo_List/Session11';
-import Session12 from './components/L12_Form_handling/Session12';
+import Session12 from './components/L12_13_Form_handling/Session12';
 // import Counter from "../src/components/L1_LifeCycle_Class_Comp/Ass1/Counter"
 // import Session4 from './components/L4_Props_Drilling_UseState/Session4';
 // import Session5 from './components/L5_useEffect_state_vs_props/Session5';
 // import Session6 from './components/L6_useEffect_task_revise/Session6';
 import Events from './components/L7_L8_Events/Events';
+import Session14 from './components/L14_15_hookes/Session14';
+import Session16 from './components/L16_Axios_Fetch/Session16';
 // import ParentCard from './components/L3_children_callBack/Child_to_parent/ParentCard';
 // import LearnUseState from './components/L3_children_callBack/useState/LearnUseState';
 // import Test from './components/1_LifeCycle/Test';
@@ -18,6 +20,7 @@ import Events from './components/L7_L8_Events/Events';
 // import Parent from './components/L2_jsx_Props-valid/Parent';
 // import ParentComponent from './components/L3_children_callBack/Props_children/ParentComponent';
 function App() {
+  // console.log = () => { };
   return (
     <div className='App-header'>
 
@@ -90,7 +93,14 @@ function App() {
 
       {/* Session 12 & 13: From Handling and validation */}
 
-      <Session12 />
+      {/* <Session12 /> */}
+
+
+      <Session14 />
+
+      {/* Axios Lib and All Methods */}
+      <Session16 />
+
     </div>
   )
 }

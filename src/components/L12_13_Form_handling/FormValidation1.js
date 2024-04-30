@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './FormValidation1.css';
 
 const nameRegex = /^[a-zA-Z\s]+$/;
@@ -21,7 +21,12 @@ const initialErrors = {
 
 function FormValidation1({ setFormData, formDataState, setFormDataState }) {
 
+
     const [errors, setErrors] = useState(initialErrors);
+    let inputRef = useRef();
+    useEffect(() => {
+        inputRef.current.focus();
+    }, [])
 
 
     //& This function runs every input feild
@@ -140,7 +145,7 @@ function FormValidation1({ setFormData, formDataState, setFormDataState }) {
         }));
     };
 
-    //& This function validate other checkboxes fo  skills
+    //& This function validate other checkboxes for  skills
     const handleSkillsChange = (skill) => {
         setFormDataState((prevData) => ({
             ...prevData,
@@ -215,6 +220,7 @@ function FormValidation1({ setFormData, formDataState, setFormDataState }) {
                 <div className="form-group">
                     <label htmlFor="username">Name</label>
                     <input
+                        ref={inputRef}
                         value={formDataState.name}
                         onChange={handleChange}
                         name="name"

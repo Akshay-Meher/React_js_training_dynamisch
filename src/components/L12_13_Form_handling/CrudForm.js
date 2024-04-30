@@ -39,7 +39,8 @@ const initialData = [{
     },
     phoneNumber: "8698474414",
     gender: "male",
-    resume: 'resume.pdf'
+    resume: 'resume.pdf',
+    date: null
 },
 {
     name: "Rutuja Shinde",
@@ -58,12 +59,14 @@ const initialData = [{
     },
     phoneNumber: "9589421058",
     gender: "female",
-    resume: 'resume.pdf'
+    resume: 'resume.pdf',
+    date: '02-05-2000'
 }
 
 ]
 
 function CrudForm() {
+
     const [formData, setFormData] = useState(initialData);
     const [formDataState, setFormDataState] = useState({
         name: '',
@@ -87,13 +90,10 @@ function CrudForm() {
     });
 
 
+
     //&    Handling Edit Logic....
     function handleEdit(user) {
-        let val = window.confirm('Confirm Edit...');
-        // console.log(val);
-        if (!val) {
-            return;
-        }
+
         let filteredData = formData.filter((data) => data != user);
         setFormData(filteredData);
         setFormDataState(user);

@@ -62,8 +62,9 @@ th {
     border-radius: 10px;
 }
 
-button:hover {
-    background-color: #007bff;
+table button:hover {
+    /* background-color: #007bff; */
+    box-shadow: 10px 5px 5px rgb(222, 68, 68);
 }
 
 /* Modal.css */

@@ -41,6 +41,12 @@
     width: auto !important;
 }
 
+input:focus {
+    /* background-color: rgba(188, 36, 199, 0.058); */
+    box-shadow: 10px 10px 10px rgb(27, 26, 26);
+    /* outline: solid 1px black; */
+}
+
 .form textarea {
     resize: vertical;
 }
