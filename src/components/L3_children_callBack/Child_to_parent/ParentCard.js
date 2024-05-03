@@ -29,7 +29,7 @@ function ParentCard() {
     return (
         <div style={style.parentCard}>
             <h1>ParentCard</h1>
-            <h3 style={{ backgroundColor: "#FDA403", padding: "10px", borderRadius: '5px' }}>{msg}</h3>
+            <h3 style={{ backgroundColor: "#FDA403", padding: "10px", borderRadius: '5px', margin: "5px" }}>{msg}</h3>
             <div>
                 <ChildCard changeMsg={changeMsg} />
             </div>

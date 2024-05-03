@@ -3,13 +3,17 @@ import propTypes from 'prop-types';
 
 const style = {
     outer: {
-        backgroundColor: "#282c34",
-        minHeight: "100vh",
+        // backgroundColor: "#282c34",
+        // minHeight: "10vh",
+        margin: '10px',
+        padding: '10px',
         display: 'flex',
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        color: "white"
+        border: '2px solid black',
+        borderRadius: "10px"
+        // color: "white"
     },
     inner: {
         display: "flex",

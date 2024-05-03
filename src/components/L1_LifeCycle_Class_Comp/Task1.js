@@ -33,7 +33,7 @@ class Task1 extends Component {
         console.log("reload")
 
         return (
-            <>
+            <div style={{ border: '2px solid black', margin: '5px', padding: '5px', borderRadius: "10px" }}>
                 <h1>
                     class comp
                     <br />
@@ -44,7 +44,7 @@ class Task1 extends Component {
                     {this.state.arraydata[3]}
                 </h1>
                 <button onClick={this.updateData}>click me</button>
-            </>
+            </div>
         );
     }
 }

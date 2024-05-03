@@ -31,7 +31,7 @@ class Task2 extends React.Component {
         // This method is called to render the component.
         // You can use this method to return JSX, which will be rendered to the DOM.
         return (
-            <div>
+            <div style={{ border: '2px solid black', margin: '5px', padding: '5px', borderRadius: "10px" }}>
                 <h1>My Component</h1>
                 <p>Count: {this.state.count}</p>
                 <button onClick={() => this.setState({ count: this.state.count + 1 })}>Increment</button>

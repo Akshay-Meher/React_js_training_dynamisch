@@ -27,7 +27,7 @@ class Task3 extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{ border: '2px solid black', margin: '5px', padding: '5px', borderRadius: "10px" }}>
                 <h2>Test Portal</h2>
                 <p>{this.state.name}</p>
 

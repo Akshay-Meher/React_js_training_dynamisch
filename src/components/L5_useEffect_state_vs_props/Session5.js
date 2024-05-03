@@ -5,8 +5,8 @@ import DragAndDrop from './DragAndDrop'
 function Session5() {
     return (
         <div>
-            {/* <UseEffect /> */}
-            <DragAndDrop />
+            <UseEffect />
+            {/* <DragAndDrop /> */}
         </div>
     )
 }

@@ -35,7 +35,7 @@ export default ChildCard
 
 const style = {
     childCard: {
-        backgroundColor: "#D862BC",
+        backgroundColor: 'cornflowerblue',
         padding: "10px  30px 0px 30px",
         margin: "auto",
         borderRadius: "20px"

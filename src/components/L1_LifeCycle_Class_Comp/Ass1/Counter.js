@@ -54,7 +54,7 @@ export default class Counter extends Component {
 
         let count = this.state.count;
         return (
-            <div className='App-header'>
+            <div className='App-header' style={{ border: '2px solid black', margin: '5px', borderRadius: "10px" }}>
                 <h1>Selected Dish: {this.state.menuData[count].dish}</h1>
                 <div className=''>
                     <button onClick={this.handleDec}>Decrement</button>
@@ -63,7 +63,11 @@ export default class Counter extends Component {
                 </div>
                 <ul className='list'>
                     {this.state.menuData.map((item, index) => {
-                        return <li key={index} className={index === count ? 'selected' : ''}> {item.dish} </li>
+                        return <li
+                            style={{ margin: '5px' }}
+                            key={index}
+                            className={index === count ? 'selected' : ''}> {item.dish}
+                        </li>
                     })}
                 </ul>
             </div>
